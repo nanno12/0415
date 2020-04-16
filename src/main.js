@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+
 import WinDesign from 'win-design'
 import router from './router/index' // 引入路由
 import 'win-design/lib/themes/default.css' // 默认主题样式文件
