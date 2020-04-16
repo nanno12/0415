@@ -36,7 +36,19 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  created() {
+    console.log('cishi');
+    
+    this.$api.registration({'name':'sdfsdf'}).then((res) =>{
+      console.log('请求成功返回的数据',res)
+    })
+    .catch((error) => {
+      console.log(error);
+      // 错误返回
+    })
+  },
+
 }
 </script>
 
